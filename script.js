@@ -69,7 +69,7 @@ function countdownRest(){
 
     this.time = timeIntervalRest = setInterval(countdownMathRest,1000);
     
-    favicon.setAttribute("href", "/images/favicon2-32x32.png");
+    favicon.setAttribute("href", "./images/favicon2-32x32.png");
     title.textContent = clockMinutes.textContent+clockSeconds.textContent + " Pomodoro Timer"    
 
     function countdownMathRest(){
@@ -87,7 +87,7 @@ function countdownRest(){
         clockMinutes.textContent = "0:";
         clockSeconds.textContent = "05";
         title.textContent = "Pomodoro Timer";
-        favicon.setAttribute("href", "/images/favicon-32x32.png");
+        favicon.setAttribute("href", "./images/favicon-32x32.png");
         timePomodoro = 4;
         return clockStopRest();
     }
